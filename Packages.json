@@ -21,6 +21,7 @@
     "friendlyName": "JS Executor",
     "description": "A simple way to execute JS file simplier.",
     "author": "Onofficiel",
+    "category": "utilities",
     "version": 1.0,
     "feature_requirements": [],
     "min_os_version": 2.2776,
