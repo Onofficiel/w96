@@ -32,5 +32,22 @@
       "16x16": "$REPO_PATH$/dist/jexe/16x16.png"
     },
     "packageRoot": "$REPO_PATH$/dist/jexe/"
+  },
+  {
+    "name": "vscode",
+    "friendlyName": "Visual Studio Code",
+    "description": "Visual Studio Code is now available on Windows 96 !",
+    "author": "Onofficiel / Microsoft",
+    "category": "development",
+    "version": 1.0,
+    "feature_requirements": [],
+    "min_os_version": 2.2776,
+    "max_os_version": 9999,
+    "depends": [],
+    "iconFiles": {
+      "32x32": "$REPO_PATH$/dist/vscode/32x32.png",
+      "16x16": "$REPO_PATH$/dist/vscode/16x16.png"
+    },
+    "packageRoot": "$REPO_PATH$/dist/vscode/"
   }
 ]
