@@ -34,7 +34,7 @@
     "packageRoot": "$REPO_PATH$/dist/jexe/"
   },
   {
-    "name": "vscode",
+    "name": "code",
     "friendlyName": "Visual Studio Code",
     "description": "Visual Studio Code is now available on Windows 96 !",
     "author": "Onofficiel / Microsoft",
