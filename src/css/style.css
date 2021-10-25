@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: var(--grey);
+}
+
+:root {
+    --grey: #3a3f3f;
 }
 
 #main {
@@ -17,4 +22,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    line-height: 10px;
 }
