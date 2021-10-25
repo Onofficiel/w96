@@ -46,3 +46,8 @@ html {
 
     transform: translateX(-50%);
 }
+
+#list {
+    width: 100vw;
+    height: 100vh;
+}
