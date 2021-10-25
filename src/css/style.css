@@ -66,6 +66,6 @@ html {
 
     padding: 0 10%;
 }
-.task:nth-child(5n+3) {
+.task:nth-child(5n+2) {
     flex-direction: row-reverse;
 }
