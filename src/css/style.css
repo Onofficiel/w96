@@ -62,10 +62,13 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 
     padding: 0 10%;
 }
-.task:nth-child(5n+2) {
+.task:nth-child(2n+2) {
     flex-direction: row-reverse;
+}
+
+.nb {
+    font-size: 50px;
 }
