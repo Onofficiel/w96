@@ -8,6 +8,10 @@
     font-family: "Lexend", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --grey: #3a3f3f;
     --green: #52FF78;
@@ -31,8 +35,9 @@
 }
 
 #scroll-link {
-    font-style: none;
-    padding: 30px;
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 100px;
     background: var(--green);
 
     position: absolute;
