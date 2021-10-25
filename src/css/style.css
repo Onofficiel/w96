@@ -10,6 +10,7 @@
 
 :root {
     --grey: #3a3f3f;
+    --green: #52FF78;
 }
 
 #main {
@@ -29,3 +30,14 @@
     line-height: 50px;
 }
 
+#scroll-link {
+    font-style: none;
+    padding: 30px;
+    background: var(--green);
+
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+
+    transform: translateX(-50%);
+}
