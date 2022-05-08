@@ -1,3 +1,4 @@
+//!wrt
 (async () => {
   let srcJSON = JSON.parse(
     await w96.FS.readstr("c:/system/packages/configs/sources.json")
