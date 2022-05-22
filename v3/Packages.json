@@ -5,7 +5,7 @@
     "description": "A simple, multitab and modern web browser.",
     "author": "Onofficiel",
     "category": "accessories",
-    "version": 110,
+    "version": 110.0,
     "feature_requirements": [],
     "min_os_version": 300000,
     "max_os_version": 400000,
