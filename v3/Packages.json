@@ -15,5 +15,22 @@
       "16x16": "$REPO_PATH$/dist/border/16x16.png"
     },
     "packageRoot": "$REPO_PATH$/dist/border/"
+  },
+  {
+    "name": "faastify",
+    "friendlyName": "Faastify",
+    "description": "Start your projects faster.",
+    "author": "Onofficiel",
+    "category": "cli",
+    "version": 1.0,
+    "feature_requirements": [],
+    "min_os_version": 300000,
+    "max_os_version": 400000,
+    "depends": [],
+    "iconFiles": {
+      "32x32": "$REPO_PATH$/dist/faastify/32x32.png",
+      "16x16": "$REPO_PATH$/dist/faastify/16x16.png"
+    },
+    "packageRoot": "$REPO_PATH$/dist/faastify/"
   }
 ]
