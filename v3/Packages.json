@@ -32,5 +32,22 @@
       "16x16": "$REPO_PATH$/dist/faastify/16x16.png"
     },
     "packageRoot": "$REPO_PATH$/dist/faastify/"
+  },
+  {
+    "name": "swirl",
+    "friendlyName": "Swirl",
+    "description": "A simple chat app.",
+    "author": "Onofficiel LK96 Branch",
+    "category": "social",
+    "version": 1.0,
+    "feature_requirements": [],
+    "min_os_version": 300000,
+    "max_os_version": 400000,
+    "depends": [],
+    "iconFiles": {
+      "32x32": "$REPO_PATH$/dist/swirl/32x32.png",
+      "16x16": "$REPO_PATH$/dist/swirl/16x16.png"
+    },
+    "packageRoot": "$REPO_PATH$/dist/swirl/"
   }
 ]
