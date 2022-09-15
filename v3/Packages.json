@@ -49,5 +49,22 @@
       "16x16": "$REPO_PATH$/dist/swirl/16x16.png"
     },
     "packageRoot": "$REPO_PATH$/dist/swirl/"
+  },
+  {
+    "name": "python",
+    "friendlyName": "Python Interpretor",
+    "description": "A Python interpretor using Brython.",
+    "author": "Onofficiel",
+    "category": "cli",
+    "version": 1.0,
+    "feature_requirements": [],
+    "min_os_version": 300000,
+    "max_os_version": 400000,
+    "depends": [],
+    "iconFiles": {
+      "32x32": "$REPO_PATH$/dist/python/32x32.png",
+      "16x16": "$REPO_PATH$/dist/python/16x16.png"
+    },
+    "packageRoot": "$REPO_PATH$/dist/python/"
   }
 ]
