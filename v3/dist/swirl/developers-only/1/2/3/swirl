@@ -25,6 +25,9 @@ class SwirlApp extends WApplication {
               <p>
                 Swirl is messaging software for Windows 96. it is IN DEVELOPMENT! Please don't think it's finished. It's not.
               </p>
+              <p>
+                It uses Peerbell by NanderTGA for networking, and some WebAssembly to make the window. however, it's mostly made in JavaScript.
+              </p>
             `, // The app content
             bodyClass: "swirl-app", // html Class of the window
             taskbar: true,
