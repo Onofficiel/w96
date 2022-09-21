@@ -30,6 +30,7 @@
     ".jpg": "image",
     ".jpeg": "image",
     ".gif": "image",
+    ".svg": "image",
 
     ".txt": "file",
     ".zip": "archive",
@@ -55,9 +56,12 @@
             const fileExt = ext[path.slice(path.lastIndexOf("."))];
 
             if (fileExt === "image") {
-              card.innerHTML += `<img style="image-rendering: pixelated" src="${
-                location.pathname + rel
-              }/${path}" />`;
+              card.innerHTML += `<img
+                style="
+                  image-rendering: pixelated;
+                  background: url(src/img/no-bg.png) round;"
+                src="${location.pathname + rel}/${path}"
+              />`;
             } else if (fileExt === "archive") {
               card.innerHTML += `<i>Cannot open archives</i>`;
             } else {
