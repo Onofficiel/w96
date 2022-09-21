@@ -2,10 +2,12 @@
   if (!location.hash) return;
   if (!location.hash.startsWith("#/")) return;
   let path = location.hash.slice(1);
-  if (!path) return (location.href = location.origin);
+  if (!path) return (location.href = location.origin + location.pathname);
 
   if (!location.search)
-    location.href = `${location.origin}/?v3/${location.hash}`;
+    location.href = `${location.origin + location.pathname}?v3/${
+      location.hash
+    }`;
   let rel = location.search.slice(1);
   if (rel.endsWith("/")) rel = rel.slice(0, rel.lastIndexOf("/"));
 
@@ -49,7 +51,9 @@
             const fileExt = ext[path.slice(path.lastIndexOf("."))];
 
             if (fileExt === "image") {
-              card.innerHTML += `<img style="image-rendering: pixelated" src="/${rel}/${path}" />`;
+              card.innerHTML += `<img style="image-rendering: pixelated" src="${
+                location.pathname + rel
+              }/${path}" />`;
             } else if (fileExt === "archive") {
               card.innerHTML += `<i>Cannot open archives</i>`;
             } else {
@@ -78,7 +82,9 @@
           );
 
           console.log(p);
-          location.href = `${location.origin}/?${rel}/#${p ? p : "/"}`;
+          location.href = `${location.origin + location.pathname}?${rel}/#${
+            p ? p : "/"
+          }`;
           location.reload();
         });
 
@@ -104,7 +110,9 @@
               cursor: "pointer",
             });
             tile.addEventListener("click", () => {
-              location.href = `${location.origin}/?${rel}/#${_path[0]}`;
+              location.href = `${location.origin + location.pathname}?${rel}/#${
+                _path[0]
+              }`;
               location.reload();
             });
 
