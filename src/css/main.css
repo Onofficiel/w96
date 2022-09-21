@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: Lexend;
+  src: url(/src/font/Lexend.ttf);
+}
 
 *,
 ::before,
@@ -44,23 +47,44 @@ body {
   position: relative;
 }
 
-.main {
+.centered {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 10px;
+
   display: flex;
   flex-direction: column;
+}
 
-  align-items: flex-start;
-  justify-content: center;
+.centered > pre,
+.centered > img {
+  border: #0f1020 solid 2px;
+  border-radius: 2px;
+  background-color: #ffffff;
+
+  height: 100%;
+
+  width: fit-content;
+  max-width: 50vw;
+}
+
+.centered > pre {
+  overflow: auto;
 }
 
 .centered > h1 {
   font-size: 50px;
+  margin-bottom: 20px;
+}
 
+.rgb-text {
   background: linear-gradient(45deg, #9b4545, #ce5858);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  margin-bottom: 20px;
-
   animation: hue-shift 5s ease infinite normal;
 }
 
@@ -108,10 +132,13 @@ body {
   color: #fff;
   border-radius: 5px;
   border: transparent solid 0px;
-
   text-decoration: none;
+  display: inline-block;
+
+  width: fit-content;
 
   padding: 10px;
+  margin: 3px 1px;
 
   animation: hue-shift 5s ease infinite normal;
   transition: border-left 0.5s ease;
@@ -121,10 +148,27 @@ body {
   border-left: #9b4545 solid 5px;
 }
 
+hr {
+  border: none;
+  border-bottom: #0f1020 solid 2px;
+  width: 100px;
+}
+
 /* Animations */
 
 @keyframes hue-shift {
   to {
     filter: hue-rotate(360deg);
+  }
+}
+
+/* MQueries */
+@media screen and (max-width: 720px) {
+  .hero {
+    display: none;
+  }
+
+  .wave {
+    opacity: 0.2; 
   }
 }

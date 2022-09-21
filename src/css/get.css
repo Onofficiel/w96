@@ -1,86 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: Lexend;
+  src: url(/src/font/Lexend.ttf);
+}
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: var(--grey);
-    font-family: "Lexend", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--grey);
+  font-family: "Lexend", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 :root {
-    --grey: #3a3f3f;
-    --green: #52FF78;
+  --grey: #3a3f3f;
+  --green: #52ff78;
 }
 
 #main {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subtitle {
-    text-align: center;
+  text-align: center;
 }
 
 .centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    margin: 0 50px;
+  margin: 0 50px;
 
-    line-height: 50px;
+  line-height: 50px;
 }
 
 #hero-image {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #scroll-link {
-    text-decoration: none;
-    padding: 20px 30px;
-    border-radius: 100px;
-    background: var(--green);
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 100px;
+  background: var(--green);
 
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
 
-    transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 #list {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .task {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    padding: 0 10%;
+  padding: 0 10%;
 }
-.task:nth-child(2n+2) {
-    flex-direction: row-reverse;
+.task:nth-child(2n + 2) {
+  flex-direction: row-reverse;
 }
 
 .nb {
-    font-size: 50px;
-    margin: 10px;
+  font-size: 50px;
+  margin: 10px;
 }
