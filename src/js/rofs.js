@@ -39,13 +39,17 @@
   };
 
   fetch(location.pathname + rel + "/rofs.json")
+    .catch((e) => {
+      card.innerText += "Can't map the files... Sorry :/";
+    })
     .then((r) => r.json())
     .then((rofs) => {
       const rPath = rofs[path];
-      if (!rPath) return;
+      if (!rPath)
+        return (card.innerHTML += "<i>404, File not found... ಥ_ಥ</i>");
 
       if (rPath.type === 0) {
-        fetch(location.pathname + rel + "" + path)
+        fetch(location.pathname + rel + path)
           .then((r) => r.text())
           .then((file) => {
             const fileExt = ext[path.slice(path.lastIndexOf("."))];
@@ -65,7 +69,7 @@
 
         const backTile = document.createElement("div");
         backTile.innerHTML = `
-        <img height="20" style="padding-right: 5px" src="${location.pathname}/src/icons/folder.svg" />
+        <img height="20" style="padding-right: 5px" src="${location.pathname}src/icons/folder.svg" />
         <span>.. (Go Back)</span>
       `;
 
@@ -96,7 +100,9 @@
           if (_path[0].startsWith(path) && !relPath.includes("/") && relPath) {
             const tile = document.createElement("div");
             tile.innerHTML = `
-            <img height="20" style="padding-right: 5px" src="${`/src/icons/${
+            <img height="20" style="padding-right: 5px" src="${`${
+              location.pathname
+            }src/icons/${
               _path[1].type === 1
                 ? "folder"
                 : ext[relPath.slice(relPath.lastIndexOf("."))] || "file"
