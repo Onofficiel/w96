@@ -38,14 +38,14 @@
     ".bjs": "border",
   };
 
-  fetch("/" + rel + "/rofs.json")
+  fetch(location.pathname + rel + "/rofs.json")
     .then((r) => r.json())
     .then((rofs) => {
       const rPath = rofs[path];
       if (!rPath) return;
 
       if (rPath.type === 0) {
-        fetch("/" + rel + "" + path)
+        fetch(location.pathname + rel + "" + path)
           .then((r) => r.text())
           .then((file) => {
             const fileExt = ext[path.slice(path.lastIndexOf("."))];
@@ -65,7 +65,7 @@
 
         const backTile = document.createElement("div");
         backTile.innerHTML = `
-        <img height="20" style="padding-right: 5px" src="/src/icons/folder.svg" />
+        <img height="20" style="padding-right: 5px" src="${location.pathname}/src/icons/folder.svg" />
         <span>.. (Go Back)</span>
       `;
 
