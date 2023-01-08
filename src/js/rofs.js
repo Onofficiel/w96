@@ -1,4 +1,6 @@
 (() => {
+  window.addEventListener("hashchange", () => location.reload());
+
   if (!location.hash) return;
   if (!location.hash.startsWith("#/")) return;
   let path = location.hash.slice(1);
