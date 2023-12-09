@@ -83,5 +83,22 @@
       "16x16": "$REPO_PATH$/dist/tsc/16x16.png"
     },
     "packageRoot": "$REPO_PATH$/dist/tsc/"
+  },
+  {
+    "name": "win10-theme",
+    "friendlyName": "Windows 10 Theme",
+    "description": "A replica of the Windows 10 theme in Windows 96.",
+    "author": "Onofficiel | Microsoft",
+    "category": "accessories",
+    "version": 1.0,
+    "feature_requirements": [],
+    "min_os_version": 300000,
+    "max_os_version": 400000,
+    "depends": [],
+    "iconFiles": {
+      "32x32": "$REPO_PATH$/dist/win10-theme/32x32.png",
+      "16x16": "$REPO_PATH$/dist/win10-theme/16x16.png"
+    },
+    "packageRoot": "$REPO_PATH$/dist/win10-theme/"
   }
 ]
