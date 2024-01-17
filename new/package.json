@@ -1,0 +1,16 @@
+{
+    "name": "onoff-repo",
+    "version": "1.0.0",
+    "description": "The official Onofficiel Repository",
+    "main": "build.js",
+    "type": "module",
+    "scripts": {
+        "build": "node tools/build.js"
+    },
+    "author": "Onofficiel",
+    "license": "ISC",
+    "dependencies": {
+        "jszip": "^3.10.1",
+        "yaml": "^2.3.4"
+    }
+}
