@@ -1,0 +1,25 @@
+@import url("https://kelbazz.github.io/src/css/libs/consts.css");
+
+@font-face {
+    font-family: "FigTree";
+    src: url("../font/Figtree.ttf");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'FigTree', sans-serif;
+    overflow-x: hidden;
+
+    background-color: var(--bluck);
+    color: var(--kream);
+
+    height: 100vh;
+    width: 100vw;
+}
