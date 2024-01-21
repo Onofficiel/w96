@@ -12,16 +12,22 @@
         <script src="./src/js/index.js" type="module" defer></script>
     </head>
     <body>
-        <iframe src="about:blank"></iframe>
+        <iframe src="about:blank" class="loading"></iframe>
         <div class="centered">
-            <img
-                src="./src/img/onoff-typo.svg"
-                alt="Package Icon"
-                class="icon"
-            />
-            <div class="side-info">
-                <strong class="name">Border</strong>
-                <div class="description">A Simple Browser</div>
+            <strong class="status">Please wait...</strong>
+            <div class="info">
+                <img
+                    src="./src/img/onoff-typo.svg"
+                    alt="Package Icon"
+                    class="icon"
+                />
+                <div class="side-info">
+                    <strong class="name">We're loading everything fo you</strong>
+                    <div class="description">This won't be long</div>
+                </div>
+            </div>
+            <div class="logs">
+                Booting up...
             </div>
         </div>
     </body>
