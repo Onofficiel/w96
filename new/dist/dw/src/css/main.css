@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "FigTree";
+    src: url("../font/Figtree.ttf");
+}
+
+:root {
+    /* Colors */
+    --kream: #f9e9ff;
+    --bluey: #0099ff;
+    --grenn: #71ec5f;
+    --yelli: #ffe856;
+    --redow: #e05f5f;
+    --puple: #9744e3;
+    --bluck: #0f1020;
+
+    /* Curves */
+    --wavey-out: cubic-bezier(0, 1.2, 0.8, 1.2);
+    --wavey-in: cubic-bezier(0.2, -0.2, 1, -0.2);
+    --wavey-in-out: cubic-bezier(0.2, -0.2, 0.8, 1.2);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "FigTree", sans-serif;
+    overflow-x: hidden;
+
+    background-color: var(--bluck);
+    color: var(--kream);
+
+    height: 100vh;
+    width: 100vw;
+}
