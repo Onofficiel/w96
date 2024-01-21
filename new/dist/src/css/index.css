@@ -6,6 +6,8 @@ body {
     place-items: center;
 
     > iframe {
+        user-select: none;
+
         position: absolute;
         top: 0;
         left: 0;
@@ -14,6 +16,13 @@ body {
         height: 100%;
 
         border: none;
+
+        transition: all 0.5s ease;
+
+        &.loading {
+            filter: blur(10px);
+            pointer-events: none;
+        }
     }
 
     > .centered {
@@ -28,13 +37,30 @@ body {
         gap: 8px;
 
         display: flex;
+        flex-direction: column;
 
-        .icon {
-            height: 32px;
-            aspect-ratio: 1;
+        > .info {
+            display: flex;
+            gap: 8px;
 
-            object-fit: cover;
-            object-position: 0;
+            > .icon {
+                height: 32px;
+                aspect-ratio: 1;
+
+                object-fit: cover;
+                object-position: 0;
+            }
+        }
+    
+        > .logs {
+            background-color: var(--bluck);
+            color: var(--kream);
+
+            font-family: monospace;
+            font-size: 12px;
+
+            padding: 6px;
+            border-radius: 4px;
         }
     }
 }
