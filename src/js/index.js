@@ -1,45 +1,5 @@
-const clouds = document.querySelector(".clouds");
+const appTile = document.querySelector(".centered");
+const iframe = document.querySelector("iframe");
 
-// Paralax clouds creation
-const cloudData = [
-    {
-        size: 1,
-        color: "var(--kream)"
-    },
-    {
-        size: 1.5,
-        color: "var(--bluey)"
-    },
-    {
-        size: 2,
-        color: "var(--puple)"
-    },
-    {
-        size: 2.5,
-        color: "var(--redow)"
-    },
-    {
-        size: 3,
-        color: "var(--yelli)"
-    },
-    {
-        size: 3.5,
-        color: "var(--grenn)"
-    }
-];
-
-for (const cloud of cloudData.sort((a, b) => b.size - a.size)) {
-    const cloudContainer = document.createElement("div");
-    cloudContainer.classList.add("cloud-container");
-    cloudContainer.style.setProperty("--plan", cloud.size);
-
-    const template = `
-        <svg class="cloud" width="1351" height="177" viewBox="0 0 1351 177" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1317.41 33.5913C1317.41 15.0393 1332.45 0 1351 0V176.92H0V0C15.107 4.503e-05 27.8848 9.97263 32.1093 23.6937C45.8761 25.5402 58.3224 31.5561 68.1361 40.4293C87.6824 29.335 110.284 23 134.365 23C190.516 23 238.623 57.4435 258.709 106.355C270.445 96.3299 285.677 90.2766 302.322 90.2766C327.622 90.2766 349.656 104.262 361.115 124.924C363.796 124.235 366.607 123.868 369.504 123.868C382.049 123.868 392.989 130.745 398.757 140.936C423.376 110.062 461.312 90.2766 503.87 90.2766C554.471 90.2766 598.539 118.248 621.456 159.571C626.819 158.193 632.441 157.459 638.234 157.459C650.805 157.459 662.568 160.912 672.63 166.92C675.976 151.895 689.385 140.664 705.418 140.664C716.406 140.664 726.161 145.939 732.29 154.096C743.518 145.662 757.476 140.664 772.6 140.664C785.011 140.664 796.636 144.029 806.612 149.897C810.37 116.353 838.826 90.2766 873.374 90.2766C905.438 90.2766 932.257 112.74 938.95 142.788C959.072 130.772 982.599 123.868 1007.74 123.868C1019.39 123.868 1030.69 125.35 1041.46 128.135C1041.38 126.724 1041.33 125.301 1041.33 123.868C1041.33 86.764 1071.41 56.6853 1108.51 56.6853C1142.07 56.6853 1169.89 81.2937 1174.89 113.451C1180.43 109.438 1187.23 107.072 1194.59 107.072C1203.39 107.072 1211.4 110.457 1217.39 115.996C1228.77 95.0493 1250.96 80.8291 1276.47 80.8291C1287.44 80.8291 1297.8 83.4592 1306.95 88.1233C1307.41 73.374 1312.63 59.8236 1321.12 48.9537C1318.75 44.3498 1317.41 39.1269 1317.41 33.5913Z" fill="${cloud.color}"/>
-        </svg>
-    `;
-
-    cloudContainer.innerHTML = template.repeat(2);
-
-    clouds.appendChild(cloudContainer);
-}
+// Init the iframe
+iframe.src = `https://windows96.net/?live=1&rootfs=${window.location.origin}/rootfs.zip`;
