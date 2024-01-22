@@ -113,7 +113,7 @@ for (let i = 0; i < pkgsRead.length; i++) {
             "32x32": `$REPO_PATH$/dist/${pName}/icon32.png`
         },
 
-        packageRoot: `$REPO_PATH$/dist/${pName}/`
+        packageRoot: `$REPO_PATH$/dist/${pName}`
     });
 
     // Add the package icon to the package folder
