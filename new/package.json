@@ -10,7 +10,7 @@
     "author": "Onofficiel",
     "license": "ISC",
     "dependencies": {
-        "jszip": "^3.10.1",
+        "adm-zip": "^0.5.10",
         "yaml": "^2.3.4"
     }
 }

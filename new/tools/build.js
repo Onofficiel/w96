@@ -1,5 +1,5 @@
 import YAML from "yaml";
-import JSZip from "jszip";
+import AdmZip from "adm-zip";
 
 import Path from "node:path";
 import fs from "node:fs";
@@ -20,13 +20,13 @@ function addFilesToZip(zip, basePath, relativePath) {
         });
     } else {
         const fileContent = fs.readFileSync(fullPath);
-        zip.file(relativePath, fileContent);
+        zip.addFile(relativePath, fileContent);
     }
 }
 
 function toNumberString(num) {
     if (Number.isInteger(num)) {
-        return num + ".0"
+        return num + ".0";
     } else {
         return num.toString();
     }
@@ -68,7 +68,7 @@ console.log(`Starting to package ${pkgsRead.length} packages...`);
 
 for (let i = 0; i < pkgsRead.length; i++) {
     const path = pkgsRead[i];
-    console.log(`Packaging "${path}" ... [${i+1}/${pkgsRead.length}]`);
+    console.log(`[${i+1}/${pkgsRead.length}] Packaging "${path}"...`);
 
     // Full path
     const fullPath = `${pkgsPath}/${path}`;
@@ -122,16 +122,16 @@ for (let i = 0; i < pkgsRead.length; i++) {
 
     // Zip the package "./content" folder
     const contentPath = `${fullPath}/content`;
-    const zip = new JSZip();
+    const zip = new AdmZip();
 
     // Use the recursive function to add files and subdirectories to the zip archive
     addFilesToZip(zip, contentPath, '');
 
     // Generate the zip file
-    zip.generateAsync({ type: "nodebuffer" }).then(zipData => {
-        // Save the zip file to the package folder
-        fs.writeFileSync(`${pkgPath}/content@${toNumberString(pVersion)}.zip`, zipData);
-    });
+    const zipData = zip.toBuffer();
+    
+    // Save the zip file to the package folder
+    fs.writeFileSync(`${pkgPath}/content@${toNumberString(pVersion)}.zip`, zipData);
 }
 
 console.log("Done packaging!");
