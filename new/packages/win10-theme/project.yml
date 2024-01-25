@@ -1,0 +1,26 @@
+# Outputs configuration
+outputs:
+  bin:
+    artifactName: win10-theme
+    spec:
+      friendlyName: Windows 10 Theme
+      description: A replica of the Windows 10 theme in Windows 96.
+      author: Onofficiel | Microsoft
+      copyright: Copyright (C) Onofficiel 2024.
+      subsys: cli
+      version: 1.0
+      icon: null
+
+# Package information
+package:
+  name: win10-theme
+  category: accessories
+
+  icon16: ./assets/icon16.png
+  icon32: ./assets/icon32.png
+
+  featureRequirements: []
+  depends: []
+
+  min_os_version: 300000
+  max_os_version: 400000

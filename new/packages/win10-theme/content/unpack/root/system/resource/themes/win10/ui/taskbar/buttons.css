@@ -1,0 +1,48 @@
+/* Global */
+.start_button,
+.search_button {
+  height: 40px;
+  width: 48px;
+
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+
+  box-shadow: none;
+  border: none;
+
+  margin: 0;
+}
+
+.start_button.sb-active,
+.start_button:active,
+.search_button:active {
+  background-color: color-mix(in srgb, var(--uwp-light-blue), transparent 90%);
+  box-shadow: none !important;
+}
+
+.start_button:not(:active):hover,
+.search_button:not(:active):hover {
+  background-color: color-mix(in srgb, var(--uwp-light-blue), transparent 85%);
+}
+
+/* Start Button */
+.start_button {
+  background-image: url($START_BUTTON$);
+}
+.start_button::after {
+  display: none;
+}
+.start_button:not(:active):hover {
+  background-image: url($START_BUTTON_HOVER$);
+}
+.start_button:active {
+  background-image: url($START_BUTTON_HOVER$);
+}
+
+/* Search Button */
+.search_button {
+  background-image: url($SEARCH_BUTTON$);
+  margin-right: 3px;
+}

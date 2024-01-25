@@ -1,0 +1,39 @@
+.wexplorer-app .w96-toolbar {
+  height: 30px;
+}
+
+.wexplorer-app .w96-toolbar>.item {
+  box-sizing: border-box;
+
+  width: 40px;
+  min-width: unset;
+
+  padding: 1px;
+}
+
+.wexplorer-app .w96-toolbar>.item>.text {
+  display: none;
+}
+
+.wexplorer-app .w96-menubar {
+  margin: 0;
+  background-color: var(--3d-obj-color-primary);
+}
+
+.wexplorer-app .nav-bar {
+  box-shadow: none;
+}
+
+.wexplorer-app>.view-box {
+  box-shadow: none;
+  border: none;
+}
+
+.wexplorer-app>.view-box>.sidebar {
+  background: var(--uwp-blue);
+  font-family: "Segoe UI";
+}
+
+.wexplorer-app>.view-box>.sidebar>.file-box>.line {
+  border-color: #000;
+}

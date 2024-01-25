@@ -1,0 +1,32 @@
+.w96-selection-box-container>.select-box {
+  outline: 1px solid var(--uwp-blue);
+  background-color: color-mix(in srgb, var(--uwp-blue), transparent);
+}
+
+.shell-icon.selected .icon-image {
+  filter: none;
+}
+
+.shell-icon .icon-text {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.shell-icon.selected .icon-text {
+  border: none;
+  background: none;
+
+  padding: 2px;
+  padding-top: 1px;
+  padding-left: 3px;
+}
+
+.exp-file-view:not(.user-desktop) .shell-icon.selected .icon-text {
+  color: #000;
+}
+
+.shell-icon.selected {
+  background-color: color-mix(in srgb, var(--uwp-light-blue), transparent);
+  outline: 1px solid var(--uwp-light-blue);
+}

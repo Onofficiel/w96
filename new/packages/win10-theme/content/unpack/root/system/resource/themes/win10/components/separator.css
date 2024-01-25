@@ -1,0 +1,22 @@
+.separator,
+.wcontext-menu>.separator,
+.w96-ui-inset-separator {
+  border: none;
+  border-bottom: 1px solid #919191;
+}
+
+.w96-ui-inset,
+.w96-inset,
+.w96-ui-inset-deep {
+  border: 1px solid #919191;
+  box-shadow: none;
+}
+
+.w96-toolbar {
+  box-shadow: none;
+}
+
+.w96-toolbar .vseparator {
+  border-left-color: #919191;
+  box-shadow: none;
+}

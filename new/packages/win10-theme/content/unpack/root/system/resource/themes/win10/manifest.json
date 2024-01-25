@@ -1,0 +1,140 @@
+{
+  "id": "win10",
+  "name": "Windows 10",
+  "description": "A theme trying to look like Windows 10",
+  "author": "Kelbaz",
+  "themeType": "normal",
+  "iconTheme": "C:/system/resource/icons/win10",
+  "soundPack": "W:/system/resource/sounds/win96",
+  "stylesheets": [
+    "./theme.css",
+
+    "./components/button.css",
+    "./components/textbox.css",
+    "./components/context-menu.css",
+    "./components/menubar.css",
+    "./components/tab-control.css",
+    "./components/separator.css",
+    "./components/footer.css",
+    "./components/checkbox.css",
+    "./components/fsview.css",
+
+    "./ui/apps/explorer.css",
+    "./ui/apps/textpad.css",
+    "./ui/apps/about.css",
+
+    "./ui/taskbar/panel.css",
+    "./ui/taskbar/buttons.css",
+    "./ui/taskbar/tasks.css",
+
+    "./ui/window.css",
+    "./ui/taskbar.css",
+    "./ui/scrollbar.css",
+    "./ui/start-menu.css"
+  ],
+  "scripts": [
+    "./theme.js"
+  ],
+  "resourceMap": [
+    {
+      "id": "SEGOE_UI",
+      "path": "./fonts/segoeui.woff2"
+    },
+    {
+      "id": "WINVER_IMAGE",
+      "path": "./assets/winver.png"
+    },
+    {
+      "id": "CHECKBOX",
+      "path": "./assets/checkbox.png"
+    },
+    {
+      "id": "MORE_ARROW",
+      "path": "./assets/more_arrow.png"
+    },
+    {
+      "id": "BATTERYSTATUS",
+      "path": "./assets/battery.png"
+    },
+    {
+      "id": "START_BUTTON",
+      "path": "./assets/start_button.png"
+    },
+    {
+      "id": "START_BUTTON_HOVER",
+      "path": "./assets/start_button_hover.png"
+    },
+    {
+      "id": "SEARCH_BUTTON",
+      "path": "./assets/search_button.png"
+    },
+    {
+      "id": "CLOSE_BTN",
+      "path": "./assets/close_btn.png"
+    },
+    {
+      "id": "CLOSE_BTN_HOVER",
+      "path": "./assets/close_btn_hover.png"
+    },
+    {
+      "id": "MAX_BTN",
+      "path": "./assets/max_btn.png"
+    },
+    {
+      "id": "MIN_BTN",
+      "path": "./assets/min_btn.png"
+    },
+    {
+      "id": "SCROLL_UP",
+      "path": "./assets/scrollbar/scroll_up.png"
+    },
+    {
+      "id": "SCROLL_DOWN",
+      "path": "./assets/scrollbar/scroll_down.png"
+    },
+    {
+      "id": "SCROLL_LEFT",
+      "path": "./assets/scrollbar/scroll_left.png"
+    },
+    {
+      "id": "SCROLL_RIGHT",
+      "path": "./assets/scrollbar/scroll_right.png"
+    },
+    {
+      "id": "SCROLL_UP_ACTIVE",
+      "path": "./assets/scrollbar/scroll_up_active.png"
+    },
+    {
+      "id": "SCROLL_DOWN_ACTIVE",
+      "path": "./assets/scrollbar/scroll_down_active.png"
+    },
+    {
+      "id": "SCROLL_LEFT_ACTIVE",
+      "path": "./assets/scrollbar/scroll_left_active.png"
+    },
+    {
+      "id": "SCROLL_RIGHT_ACTIVE",
+      "path": "./assets/scrollbar/scroll_right_active.png"
+    },
+    {
+      "id": "SM_SHUTDOWN",
+      "path": "./assets/start_menu/shutdown.png"
+    },
+    {
+      "id": "SM_SETTINGS",
+      "path": "./assets/start_menu/settings.png"
+    },
+    {
+      "id": "SM_EXPLORER",
+      "path": "./assets/start_menu/explorer.png"
+    },
+    {
+      "id": "SM_DOCUMENTS",
+      "path": "./assets/start_menu/documents.png"
+    },
+    {
+      "id": "SM_HAMBURGER",
+      "path": "./assets/start_menu/hamburger.png"
+    }
+  ]
+}
