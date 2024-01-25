@@ -17,20 +17,54 @@
         "packageRoot": "$REPO_PATH$/dist/border"
     },
     {
-        "name": "sample",
-        "version": 1.1,
-        "friendlyName": "Hello World",
-        "description": "Simple command line program",
-        "author": "Windows 96 Team",
+        "name": "python",
+        "version": 1,
+        "friendlyName": "Python Interpretor",
+        "description": "A Python interpretor using Brython.",
+        "author": "Onofficiel",
         "category": "cli",
         "feature_requirements": [],
         "depends": [],
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
-            "16x16": "$REPO_PATH$/dist/sample/icon16.png",
-            "32x32": "$REPO_PATH$/dist/sample/icon32.png"
+            "16x16": "$REPO_PATH$/dist/python/icon16.png",
+            "32x32": "$REPO_PATH$/dist/python/icon32.png"
         },
-        "packageRoot": "$REPO_PATH$/dist/sample"
+        "packageRoot": "$REPO_PATH$/dist/python"
+    },
+    {
+        "name": "tsc",
+        "version": 1.2,
+        "friendlyName": "Typescript Compiler",
+        "description": "A Typescript Compiler.",
+        "author": "Onofficiel | Microsoft",
+        "category": "cli",
+        "feature_requirements": [],
+        "depends": [],
+        "min_os_version": 300000,
+        "max_os_version": 400000,
+        "iconFiles": {
+            "16x16": "$REPO_PATH$/dist/tsc/icon16.png",
+            "32x32": "$REPO_PATH$/dist/tsc/icon32.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/tsc"
+    },
+    {
+        "name": "win10-theme",
+        "version": 1,
+        "friendlyName": "Windows 10 Theme",
+        "description": "A replica of the Windows 10 theme in Windows 96.",
+        "author": "Onofficiel | Microsoft",
+        "category": "accessories",
+        "feature_requirements": [],
+        "depends": [],
+        "min_os_version": 300000,
+        "max_os_version": 400000,
+        "iconFiles": {
+            "16x16": "$REPO_PATH$/dist/win10-theme/icon16.png",
+            "32x32": "$REPO_PATH$/dist/win10-theme/icon32.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/win10-theme"
     }
 ]
