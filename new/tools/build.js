@@ -9,6 +9,9 @@ const __dirname = Path.dirname(fileURLToPath(import.meta.url));
 const rootPath = Path.join(__dirname, "..");
 
 // Recursive function to add files and subdirectories to the zip archive
+/**
+ * @param {AdmZip} zip
+ */
 function addFilesToZip(zip, basePath, relativePath) {
     const fullPath = Path.join(basePath, relativePath);
     const stats = fs.statSync(fullPath);
@@ -20,7 +23,7 @@ function addFilesToZip(zip, basePath, relativePath) {
         });
     } else {
         const fileContent = fs.readFileSync(fullPath);
-        zip.addFile(relativePath, fileContent);
+        zip.addFile(relativePath.replace(/\\/g, "/"), fileContent);
     }
 }
 
