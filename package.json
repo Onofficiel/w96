@@ -5,7 +5,8 @@
     "main": "build.js",
     "type": "module",
     "scripts": {
-        "build": "node tools/build.js"
+        "build": "node tools/build.js",
+        "deploy": "git subtree push --prefix dist origin gh-pages"
     },
     "author": "Onofficiel",
     "license": "ISC",
