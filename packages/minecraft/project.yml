@@ -1,0 +1,47 @@
+# Toolchain version
+version: 1.0
+
+# Project Settings
+project:
+  type: "wrt"
+  name: Minecraft
+
+# Compiler settings
+compiler:
+  name: wrtc
+  options:
+    useBabel: true
+    useTerser: true
+    startupClass: Minecraft
+    entryFile: ./src/main.js
+
+# Hacky things
+hacks:
+  shiftArgv: false
+
+# Outputs configuration
+outputs:
+  bin:
+    artifactName: minecraft
+    spec:
+      friendlyName: Minecraft
+      description: Minecraft Java Edition 1.8.8 ported using EaglerCraft
+      author: Onofficiel | Mojang | EaglerCraft Team
+      copyright: Copyright (C) Onofficiel 2024.
+      subsys: gui
+      version: 1.0
+      icon: "apps/blocks"
+
+# Package information
+package:
+  name: minecraft
+  category: entertainment
+
+  icon16: ./assets/icon16.png
+  icon32: ./assets/icon32.png
+
+  featureRequirements: []
+  depends: []
+
+  min_os_version: 300000
+  max_os_version: 400000
