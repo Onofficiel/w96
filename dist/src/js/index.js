@@ -5,8 +5,19 @@ const status = appTile.querySelector(".status");
 const info = appTile.querySelector(".info");
 const logs = appTile.querySelector(".logs");
 
-// Init the iframe
-iframe.src = `https://windows96.net/?live=1&faster=1&rootfs=https://onofficiel.github.io/w96/rootfs.zip`;
+const rootfsUrl = `https://windows96.net/?live=1&faster=1&rootfs=https://onofficiel.github.io/w96/rootfs.zip`;
+
+iframe.addEventListener("load", () => {
+    appTile.style.visibility = "visible";
+
+    iframe.classList.add("loading");
+
+    status.innerText = "Loading...";
+    info.querySelector(".icon").src = "./src/img/onoff-typo.svg";
+    info.querySelector(".name").innerText = "We're loading everything for you";
+    info.querySelector(".description").innerText = "This won't be long";
+    logs.innerText = "Booting up...";
+});
 
 // Wait for any message post
 window.addEventListener("message", async (event) => {
@@ -20,16 +31,17 @@ window.addEventListener("message", async (event) => {
     // Type checking
     if (type === "onoff-complete") {
         status.innerText = "Complete!";
-        info.computedStyleMap.display = "none";
-        logs.computedStyleMap.display = "none";
+        info.querySelector(".icon").src = "./src/img/onoff-typo.svg";
+        info.querySelector(".name").innerText = "The environment is ready";
+        logs.innerText = ":)";
 
         // Wait for 1s
         await new Promise(resolve => setTimeout(resolve, 1000));
 
         appTile
-            .animate({ opacity: 0, translate: "0 10px" }, { duration: 200, fill: "forwards", easing: "ease" })
+            .animate({ opacity: 0, translate: "0 10px" }, { duration: 200, easing: "ease" })
             .addEventListener("finish", () => {
-                appTile.remove();
+                appTile.style.visibility = "hidden";
                 iframe.classList.remove("loading");
             });
     }
@@ -53,3 +65,6 @@ window.addEventListener("message", async (event) => {
         logs.innerText = msg.message;
     }
 });
+
+// Init the iframe
+iframe.src = rootfsUrl;
