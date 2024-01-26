@@ -143,10 +143,20 @@ class Minecraft extends WApplication {
             }
 
             // Hack to make this works
-            win.focus();
-            win.addEventListener("click", () => {
+            function focusGame() {
                 win.focus();
+            }
+
+            win.addEventListener("blur", () => {
+                win.addEventListener("click", focusGame);
+            });
+
+            win.addEventListener("focus", () => {
+                win.removeEventListener("click", focusGame);
             })
+
+            win.addEventListener("click", focusGame);
+            focusGame();
         });
 
         body.appendChild(iframe);
