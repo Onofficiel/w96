@@ -17,6 +17,23 @@
         "packageRoot": "$REPO_PATH$/dist/border"
     },
     {
+        "name": "minecraft",
+        "version": 1,
+        "friendlyName": "Minecraft",
+        "description": "Minecraft Java Edition 1.8.8 ported using EaglerCraft",
+        "author": "Onofficiel | Mojang | EaglerCraft Team",
+        "category": "entertainment",
+        "feature_requirements": [],
+        "depends": [],
+        "min_os_version": 300000,
+        "max_os_version": 400000,
+        "iconFiles": {
+            "16x16": "$REPO_PATH$/dist/minecraft/icon16.png",
+            "32x32": "$REPO_PATH$/dist/minecraft/icon32.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/minecraft"
+    },
+    {
         "name": "python",
         "version": 1,
         "friendlyName": "Python Interpretor",
