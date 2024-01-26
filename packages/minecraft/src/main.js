@@ -15,7 +15,7 @@ class Minecraft extends WApplication {
     async main(argv) {
         super.main(argv);
 
-        const eagPath = argv[1] ? `/_/${argv[1].replace(":", "")}` : "";
+        const eagPath = argv[1] ? `/_/${argv[1].replace(":", "")}` : "/_/C/local/minecraft/eagler.html";
 
         // Create the window
         const mainwnd = this.createWindow({
