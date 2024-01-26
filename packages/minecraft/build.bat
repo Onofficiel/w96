@@ -1,1 +1,1 @@
-wdt build . ./content/unpack/root/system/local/bin/minecraft
+wdt build . ./content/unpack/root/system/local/bin/

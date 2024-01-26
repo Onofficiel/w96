@@ -20,8 +20,8 @@ window.addEventListener("message", async (event) => {
     // Type checking
     if (type === "onoff-complete") {
         status.innerText = "Complete!";
-        info.remove();
-        logs.remove();
+        info.computedStyleMap.display = "none";
+        logs.computedStyleMap.display = "none";
 
         // Wait for 1s
         await new Promise(resolve => setTimeout(resolve, 1000));
@@ -49,7 +49,7 @@ window.addEventListener("message", async (event) => {
         `;
     }
     else if (type === "onoff-install-info") {
-        const { msg, type } = content;
-        console.debug(msg, type);
+        const { msg } = content;
+        logs.innerText = msg.message;
     }
 });
