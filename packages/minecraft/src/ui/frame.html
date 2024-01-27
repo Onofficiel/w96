@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="EaglercraftX 1.8 Offline" />
+<meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8" />
+
+<title>EaglercraftX 1.8</title>
+
+<script type="text/javascript">
+"use strict";
+const relayId = Math.floor(Math.random() * 3);
+
+// %%%%%%%%% launch options %%%%%%%%%%%%
+
+window.eaglercraftXOpts = {
+	container: "game_frame",
+	worldsDB: "worlds",
+	relays: [
+		{ addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId == 0 },
+		{ addr: "wss://relay.lax1dude.net/", comment: "lax1dude relay #2", primary: relayId == 1 },
+		{ addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId == 2 }
+	],
+	assetsURI: [
+		{ url: "%URL_STATICFILE_assets0%" },
+		{ path: "assets/minecraft/lang/", url: "%URL_STATICFILE_assets1%" }
+	]
+};
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+</script>
+
+<script type="text/javascript" src="%URL_STATICFILE_engine%"></script>
+
+<script type="text/javascript">
+"use strict";
+window.addEventListener("load", () => {
+    main();
+});
+</script>
+
+</head>
+
+<body style="margin:0px;width:100vw;height:100vh;overflow:hidden" id="game_frame">
+</body>
+
+</html>
