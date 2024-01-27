@@ -18,7 +18,7 @@
     },
     {
         "name": "minecraft",
-        "version": 1,
+        "version": 1.1,
         "friendlyName": "Minecraft",
         "description": "Minecraft Java Edition 1.8.8 ported using EaglerCraft",
         "author": "Onofficiel | Mojang | EaglerCraft Team",
