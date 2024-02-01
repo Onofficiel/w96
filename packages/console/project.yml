@@ -1,7 +1,6 @@
 # Outputs configuration
 outputs:
   bin:
-    artifactName: console
     spec:
       friendlyName: Terminal Console
       description: The terminal console library

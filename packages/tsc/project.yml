@@ -1,15 +1,12 @@
 # Outputs configuration
 outputs:
   bin:
-    artifactName: tsc
     spec:
       friendlyName: Typescript Compiler
       description: A Typescript Compiler.
       author: Onofficiel | Microsoft
       copyright: Copyright (C) Onofficiel 2024.
-      subsys: cli
       version: 1.2
-      icon: null
 
 # Package information
 package:
