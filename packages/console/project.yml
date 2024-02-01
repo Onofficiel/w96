@@ -1,0 +1,24 @@
+# Outputs configuration
+outputs:
+  bin:
+    artifactName: console
+    spec:
+      friendlyName: Terminal Console
+      description: The terminal console library
+      author: Onofficiel
+      copyright: Copyright (C) Onofficiel 2024.
+      version: 1.0
+
+# Package information
+package:
+  name: console
+  category: libraries
+
+  icon16: ./assets/icon16.png
+  icon32: ./assets/icon32.png
+
+  featureRequirements: []
+  depends: []
+
+  min_os_version: 300000
+  max_os_version: 400000
