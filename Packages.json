@@ -84,8 +84,8 @@
         "category": "development",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 7781,
-        "downloadSize": 3041,
+        "installedSize": 7761,
+        "downloadSize": 3035,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
