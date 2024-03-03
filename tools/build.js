@@ -96,29 +96,6 @@ for (let i = 0; i < pkgsRead.length; i++) {
     const pkgPath = `${distPath}/dist/${pName}`;
     if (!fs.existsSync(pkgPath)) fs.mkdirSync(pkgPath);
 
-    // Add the package to the "Packages.json" file
-    packagesJson.push({
-        name: pName,
-        version: pVersion,
-        friendlyName: manifest.outputs.bin.spec.friendlyName,
-        description: manifest.outputs.bin.spec.description,
-        author: manifest.outputs.bin.spec.author,
-        category: manifest.package.category,
-
-        feature_requirements: manifest.package.featureRequirements,
-        depends: manifest.package.depends,
-
-        min_os_version: manifest.package.min_os_version,
-        max_os_version: manifest.package.max_os_version,
-
-        iconFiles: {
-            "16x16": `$REPO_PATH$/dist/${pName}/icon16.png`,
-            "32x32": `$REPO_PATH$/dist/${pName}/icon32.png`
-        },
-
-        packageRoot: `$REPO_PATH$/dist/${pName}`
-    });
-
     // Add the package icon to the package folder
     fs.copyFileSync(Path.join(fullPath, manifest.package.icon16), `${pkgPath}/icon16.png`);
     fs.copyFileSync(Path.join(fullPath, manifest.package.icon32), `${pkgPath}/icon32.png`);
@@ -134,7 +111,43 @@ for (let i = 0; i < pkgsRead.length; i++) {
     const zipData = zip.toBuffer();
     
     // Save the zip file to the package folder
-    fs.writeFileSync(`${pkgPath}/content@${toNumberString(pVersion)}.zip`, zipData);
+    const OUT_PATH = `${pkgPath}/content@${toNumberString(pVersion)}.zip`;
+    fs.writeFileSync(OUT_PATH, zipData);
+
+    // Get the uncompressed size of the zip file
+    const uncompressedSize = 0;
+    for (const entry of zip.getEntries()) {
+        uncompressedSize += entry.header.size;
+    }
+
+    // Get the compressed size of the zip file
+    const compressedSize = (await fs.promises.stat(OUT_PATH)).size;
+
+    // Add the package to the "Packages.json" file
+    packagesJson.push({
+        name: pName,
+        version: pVersion,
+        friendlyName: manifest.outputs.bin.spec.friendlyName,
+        description: manifest.outputs.bin.spec.description,
+        author: manifest.outputs.bin.spec.author,
+        category: manifest.package.category,
+
+        feature_requirements: manifest.package.featureRequirements,
+        depends: manifest.package.depends,
+
+        installedSize: uncompressedSize,
+        downloadSize: compressedSize,
+
+        min_os_version: manifest.package.min_os_version,
+        max_os_version: manifest.package.max_os_version,
+
+        iconFiles: {
+            "16x16": `$REPO_PATH$/dist/${pName}/icon16.png`,
+            "32x32": `$REPO_PATH$/dist/${pName}/icon32.png`
+        },
+
+        packageRoot: `$REPO_PATH$/dist/${pName}`
+    });
 }
 
 console.log("Done packaging!");
