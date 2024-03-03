@@ -16,16 +16,16 @@ function createBuffer(transferId, dataType, numPackets, packetNumber, data) {
     const buffer = new Uint8Array(bufferSize);
 
     // Write the unique transfer ID (4 bytes)
-    headerArray.set(uintToBytes(transferId), 0);
+    buffer.set(uintToBytes(transferId), 0);
 
     // Write the data type (1 byte)
-    headerArray.set(new Uint8Array([dataType]), 4);
+    buffer.set(new Uint8Array([dataType]), 4);
 
     // Write the number of packets (4 bytes)
-    headerArray.set(uintToBytes(numPackets), 5);
+    buffer.set(uintToBytes(numPackets), 5);
 
     // Write the packet number (4 bytes)
-    headerArray.set(uintToBytes(packetNumber), 9);
+    buffer.set(uintToBytes(packetNumber), 9);
 
     // Write data
     buffer.set(data, HEADER_SIZE);
