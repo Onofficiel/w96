@@ -1,0 +1,23 @@
+# Outputs configuration
+outputs:
+  bin:
+    spec:
+      friendlyName: RRP
+      description: The PPP2 request-response protocol
+      author: Onofficiel
+      copyright: Copyright (C) Onofficiel 2024.
+      version: 1.0
+
+# Package information
+package:
+  name: rrp
+  category: development
+
+  icon16: ./assets/icon16.png
+  icon32: ./assets/icon32.png
+
+  featureRequirements: []
+  depends: []
+
+  min_os_version: 300000
+  max_os_version: 400000
