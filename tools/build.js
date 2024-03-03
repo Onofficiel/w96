@@ -115,7 +115,7 @@ for (let i = 0; i < pkgsRead.length; i++) {
     fs.writeFileSync(OUT_PATH, zipData);
 
     // Get the uncompressed size of the zip file
-    const uncompressedSize = 0;
+    let uncompressedSize = 0;
     for (const entry of zip.getEntries()) {
         uncompressedSize += entry.header.size;
     }

@@ -8,6 +8,8 @@
         "category": "accessories",
         "feature_requirements": [],
         "depends": [],
+        "installedSize": 97314,
+        "downloadSize": 31292,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -25,6 +27,8 @@
         "category": "libraries",
         "feature_requirements": [],
         "depends": [],
+        "installedSize": 66212,
+        "downloadSize": 15467,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -42,6 +46,8 @@
         "category": "entertainment",
         "feature_requirements": [],
         "depends": [],
+        "installedSize": 25530860,
+        "downloadSize": 11078619,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -59,6 +65,8 @@
         "category": "cli",
         "feature_requirements": [],
         "depends": [],
+        "installedSize": 1331669,
+        "downloadSize": 236261,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -76,6 +84,8 @@
         "category": "development",
         "feature_requirements": [],
         "depends": [],
+        "installedSize": 7781,
+        "downloadSize": 3041,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -93,6 +103,8 @@
         "category": "cli",
         "feature_requirements": [],
         "depends": [],
+        "installedSize": 10994812,
+        "downloadSize": 1893792,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -110,6 +122,8 @@
         "category": "accessories",
         "feature_requirements": [],
         "depends": [],
+        "installedSize": 193832,
+        "downloadSize": 200601,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
