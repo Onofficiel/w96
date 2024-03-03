@@ -68,6 +68,23 @@
         "packageRoot": "$REPO_PATH$/dist/python"
     },
     {
+        "name": "rrp",
+        "version": 1,
+        "friendlyName": "RRP",
+        "description": "The PPP2 request-response protocol",
+        "author": "Onofficiel",
+        "category": "development",
+        "feature_requirements": [],
+        "depends": [],
+        "min_os_version": 300000,
+        "max_os_version": 400000,
+        "iconFiles": {
+            "16x16": "$REPO_PATH$/dist/rrp/icon16.png",
+            "32x32": "$REPO_PATH$/dist/rrp/icon32.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/rrp"
+    },
+    {
         "name": "tsc",
         "version": 1.2,
         "friendlyName": "Typescript Compiler",
