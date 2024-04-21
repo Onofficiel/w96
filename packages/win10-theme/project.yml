@@ -6,7 +6,7 @@ outputs:
       description: A replica of the Windows 10 theme in Windows 96.
       author: Onofficiel | Microsoft
       copyright: Copyright (C) Onofficiel 2024.
-      version: 1.0
+      version: 1.1
 
 # Package information
 package:
