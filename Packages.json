@@ -115,7 +115,7 @@
     },
     {
         "name": "win10-theme",
-        "version": 1,
+        "version": 1.1,
         "friendlyName": "Windows 10 Theme",
         "description": "A replica of the Windows 10 theme in Windows 96.",
         "author": "Onofficiel | Microsoft",
