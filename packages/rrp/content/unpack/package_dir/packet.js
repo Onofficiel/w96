@@ -9,7 +9,6 @@ const MAX_DATA_SIZE = 256 * 1024; // 256 KB
  * @param {0 | 1} dataType The type of data.
  * @param {Number} numPackets The total number of packets.
  * @param {Number} packetNumber The index of the packet.
- * @data {}
  */
 function createBuffer(transferId, dataType, numPackets, packetNumber, data) {
     const bufferSize = HEADER_SIZE + data.length;
