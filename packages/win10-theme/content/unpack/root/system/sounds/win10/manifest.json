@@ -1,0 +1,15 @@
+{
+	"meta": {
+		"name": "Windows 10 Sound Pack",
+		"author": "Onofficiel"
+	},
+	"sounds": {
+		"error": "C:/system/resource/sounds/win10/error.mp3",
+        "question": "C:/system/resource/sounds/win10/ding.mp3",
+        "asterisk": "C:/system/resource/sounds/win10/ding.mp3",
+        "start": "W:/system/resource/sounds/silence.mp3",
+        "shutdown": "W:/system/resource/sounds/silence.mp3",
+        "navigate": "C:/system/resource/sounds/win10/nav.mp3",
+        "relaxing": "C:/system/resource/sounds/win10/relaxing.mp3"
+	}
+}
