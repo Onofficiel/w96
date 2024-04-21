@@ -84,8 +84,8 @@
         "category": "development",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 7761,
-        "downloadSize": 3035,
+        "installedSize": 7748,
+        "downloadSize": 3029,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -122,8 +122,8 @@
         "category": "accessories",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 193832,
-        "downloadSize": 200601,
+        "installedSize": 215850,
+        "downloadSize": 187085,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
