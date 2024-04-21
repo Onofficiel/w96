@@ -16,7 +16,7 @@
   left: 0;
 
   overflow: hidden;
-  z-index: 9999;
+  z-index: 999999999;
 
   animation: open-sm-container .4s cubic-bezier(0.22, 0.61, 0.36, 1);
 }

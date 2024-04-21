@@ -1,48 +1,73 @@
 /* Global */
 .start_button,
 .search_button {
-  height: 40px;
-  width: 48px;
+    position: relative;
 
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 16px;
+    height: 40px;
+    width: 48px;
 
-  box-shadow: none;
-  border: none;
+    background-image: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
 
-  margin: 0;
+    box-shadow: none;
+    border: none;
+
+    margin: 0;
 }
 
-.start_button.sb-active,
-.start_button:active,
+.search_button.fm-active,
 .search_button:active {
-  background-color: color-mix(in srgb, var(--uwp-light-blue), transparent 90%);
-  box-shadow: none !important;
+    background-color: rgba(255, 255, 255, 0.10);
 }
 
-.start_button:not(:active):hover,
-.search_button:not(:active):hover {
-  background-color: color-mix(in srgb, var(--uwp-light-blue), transparent 85%);
+.search_button:not(:active):hover,
+.start_button:not(:active):hover {
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Start Button */
-.start_button {
-  background-image: url($START_BUTTON$);
-}
 .start_button::after {
-  display: none;
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+
+    background-image: url($START_BUTTON$);
 }
-.start_button:not(:active):hover {
-  background-image: url($START_BUTTON_HOVER$);
+
+.start_button.sb-active,
+.start_button.sb-active:hover {
+    background-color: rgba(255, 255, 255, 0.20);
+    box-shadow: none !important;
 }
+
 .start_button:active {
-  background-image: url($START_BUTTON_HOVER$);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.start_button:not(:active):hover::after {
+    filter: var(--w10-secondary-filter);
+}
+
+.start_button:active::after {
+    filter: var(--w10-main-filter);
 }
 
 /* Search Button */
 .search_button {
-  background-image: url($SEARCH_BUTTON$);
-  margin-right: 3px;
+    background-image: url($SEARCH_BUTTON$);
+    margin-right: 3px;
 }

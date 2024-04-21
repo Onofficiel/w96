@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "apps/explorer",
+        "name": "Explorer",
+        "action": "explorer"
+    },
+    {
+        "icon": "apps/terminal",
+        "name": "Terminal",
+        "action": "terminal"
+    },
+    {
+        "icon": "apps/iexploder",
+        "name": "Internet Explorer",
+        "action": "internete"
+    },
+    {
+        "icon": "apps/textpad",
+        "name": "Textpad",
+        "action": "textpad"
+    }
+]

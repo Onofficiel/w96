@@ -5,7 +5,7 @@
   "author": "Kelbaz",
   "themeType": "normal",
   "iconTheme": "C:/system/resource/icons/win10",
-  "soundPack": "W:/system/resource/sounds/win96",
+  "soundPack": "C:/system/resource/sounds/win10",
   "stylesheets": [
     "./theme.css",
 
@@ -30,7 +30,14 @@
     "./ui/window.css",
     "./ui/taskbar.css",
     "./ui/scrollbar.css",
-    "./ui/start-menu.css"
+
+    "./ui/start-menu.css",
+    "./ui/search-menu.css",
+
+    "./ui/search-menu/matches.css",
+
+    "./ui/search-menu/all.css",
+    "./ui/search-menu/apps.css"
   ],
   "scripts": [
     "./theme.js"
@@ -38,7 +45,7 @@
   "resourceMap": [
     {
       "id": "SEGOE_UI",
-      "path": "./fonts/segoeui.woff2"
+      "path": "./fonts/segoeui.ttf"
     },
     {
       "id": "WINVER_IMAGE",
@@ -53,16 +60,16 @@
       "path": "./assets/more_arrow.png"
     },
     {
+      "id": "RESIZER",
+      "path": "./assets/resizer.png"
+    },
+    {
       "id": "BATTERYSTATUS",
       "path": "./assets/battery.png"
     },
     {
       "id": "START_BUTTON",
       "path": "./assets/start_button.png"
-    },
-    {
-      "id": "START_BUTTON_HOVER",
-      "path": "./assets/start_button_hover.png"
     },
     {
       "id": "SEARCH_BUTTON",

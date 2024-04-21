@@ -30,7 +30,7 @@
 }
 
 .wexplorer-app>.view-box>.sidebar {
-  background: var(--uwp-blue);
+  background: var(--w10-main);
   font-family: "Segoe UI";
 }
 

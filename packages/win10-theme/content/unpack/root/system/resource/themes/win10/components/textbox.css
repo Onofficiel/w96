@@ -17,5 +17,5 @@
 *:not(.prompt) > input[type="text"]:focus,
 .wexplorer-app>.nav-bar>.nav:focus {
     box-shadow: none;
-    border: 1px solid var(--uwp-blue);
+    border: 1px solid var(--w10-main);
 }

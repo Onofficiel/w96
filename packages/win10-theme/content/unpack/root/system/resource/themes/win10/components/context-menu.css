@@ -26,7 +26,7 @@
 
 .wcontext-menu>.item:not([disabled]):hover,
 .wcontext-menu>.item.selected {
-  background-color: var(--uwp-light-blue);
+  background-color: var(--w10-secondary);
   color: #000;
 }
 

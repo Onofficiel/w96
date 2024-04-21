@@ -15,8 +15,8 @@
 }
 
 .w96-button:hover:not([disabled]):not(.start_button) {
-  border-color: var(--uwp-blue);
-  background-color: var(--uwp-light-blue);
+  border-color: var(--w10-main);
+  background-color: var(--w10-secondary);
 }
 
 .w96-button:not([disabled]):active {
@@ -28,7 +28,7 @@
 }
 
 .w96-button:not(.start_button):focus {
-  border-color: var(--uwp-blue);
-  box-shadow:  1px  1px inset var(--uwp-blue),
-              -1px -1px inset var(--uwp-blue);
+  border-color: var(--w10-main);
+  box-shadow:  1px  1px inset var(--w10-main),
+              -1px -1px inset var(--w10-main);
 }

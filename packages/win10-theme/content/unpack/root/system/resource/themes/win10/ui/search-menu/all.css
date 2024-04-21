@@ -1,0 +1,84 @@
+/* No search */
+.tenfm-container>.content .suggested,
+.tenfm-container>.content .trends {
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px;
+}
+
+.tenfm-container>.content .suggested>.suggested-apps {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.tenfm-container>.content .suggested>.suggested-apps>li {
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    column-gap: 12px;
+
+    font-size: 15px;
+}
+
+.tenfm-container>.content .suggested>.suggested-apps>li:not(:first-child) {
+    border-top: 1px solid rgb(80 80 80 / 55%);
+}
+
+.tenfm-container>.content .suggested>.suggested-apps>li:hover,
+.tenfm-container>.content .suggested>.suggested-apps>li:hover+li {
+    border-color: transparent;
+}
+
+.tenfm-container>.content .suggested>.suggested-apps>li:hover {
+    background-color: rgba(80 80 80 / 75%);
+    border-radius: 4px;
+}
+
+/* Top apps */
+.tenfm-container>.content .trends>.top-apps {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    list-style: none;
+
+    padding: 0;
+}
+
+.tenfm-container>.content .trends>.top-apps>li {
+    text-align: center;
+
+    padding-block: 8px;
+    padding-inline: 12px;
+    row-gap: 8px;
+
+    background-color: rgba(80 80 80 / 55%);
+    border-radius: 5px;
+
+    width: 80px;
+
+    overflow: hidden;
+}
+.tenfm-container>.content .trends>.top-apps>li:hover {
+    background-color: rgba(80 80 80 / 75%);
+}
+
+.tenfm-container>.content .trends>.top-apps>li>span {
+    display: block;
+
+    line-height: 1.5;
+    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

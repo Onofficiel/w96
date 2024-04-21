@@ -1,0 +1,300 @@
+.tenfm-container {
+    --fm-height: 500px;
+
+    border: 1px solid #404040bf;
+    background-color: #212121b3;
+    background-image: var(--uwp-noise);
+    box-shadow: #1a1a1a80 3px 0px 10px 3px;
+    backdrop-filter: blur(15px);
+
+    color: #fff;
+
+    height: var(--fm-height);
+    width: 600px;
+
+    font-size: 13px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    bottom: 40px;
+    left: 48px;
+
+    overflow: hidden;
+    z-index: 999999999;
+
+    animation: open-fm-container .4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.tenfm-container strong {
+    font-weight: 600;
+}
+
+/* Nav bar */
+.tenfm-container>.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2px 24px 0 13px;
+
+    border-bottom: 1px solid #21212166;
+}
+
+.tenfm-container>.navbar>ul {
+    display: flex;
+
+    padding: 0;
+    margin: 0;
+}
+
+.tenfm-container>.navbar>ul>li {
+    list-style: none;
+    user-select: none;
+
+    padding: 15px 13px 14px;
+    margin: 0;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #d2d2d2;
+    border-bottom: 4px solid transparent;
+}
+
+.tenfm-container>.navbar>ul>li:hover {
+    color: #ffffff;
+}
+
+.tenfm-container>.navbar>ul>li.active {
+    color: #ffffff;
+    border-color: var(--w10-main);
+}
+
+.tenfm-container>.navbar>.close {
+    background: url($CLOSE_BTN$);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    filter: contrast(0) brightness(2);
+    border: none;
+
+    height: 16px;
+    aspect-ratio: 1;
+}
+
+/* Content */
+.tenfm-container>.content {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+/* Home: Search-home */
+.tenfm-container>.content>.start-search {
+    display: grid;
+    place-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.tenfm-container>.content>.start-search>.centered {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    color: #afafaf;
+}
+
+.tenfm-container>.content>.start-search>.centered>img {
+    height: 128px;
+}
+
+.tenfm-container>.content>.start-search>.centered>.title {
+    margin-top: 34px;
+
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.tenfm-container>.content>.start-search>.centered>.subtitle {
+    margin-top: 14px;
+
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.tenfm-container>.content>.splitted {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+}
+
+.tenfm-container>.content>.splitted>section {
+    flex: 1;
+}
+
+.tenfm-container>.content>.splitted>.results {
+    overflow: auto;
+}
+
+.tenfm-container>.content>.splitted>.details {
+    padding: 12px 12px 0;
+
+    background-color: rgba(20 20 20 / 65%);
+    background-image: var(--uwp-noise);
+}
+
+.tenfm-container>.content>.splitted>.details>.container {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    background-color: rgba(20 20 20 / 80%);
+    background-image: var(--uwp-noise);
+}
+
+.tenfm-container>.content>.splitted>.details>.container>.info {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    row-gap: 5px;
+    height: 140px;
+}
+
+.tenfm-container>.content>.splitted>.details>.container>.info>img {
+    height: 64px;
+    aspect-ratio: 1;
+
+    image-rendering: pixelated;
+}
+
+.tenfm-container>.content>.splitted>.details>.container>.info>.label {
+    font-size: 18px;
+    font-weight: 400;
+
+    text-align: center;
+}
+
+.tenfm-container>.content>.splitted>.details>.container>.info>.sublabel {
+    font-size: 12px;
+}
+
+.tenfm-container>.content>.splitted>.details>.container>.actions {
+    display: flex;
+    flex-direction: column;
+
+    padding-block: 12px;
+    border-block: 2px solid #a1a1a1;
+}
+
+.tenfm-container>.content>.splitted>.details>.container>.actions>button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-block: 6px;
+    padding-inline: 24px;
+
+    column-gap: 12px;
+
+    background: none;
+    border: none;
+
+    color: #fff;
+    font-size: 12px;
+}
+
+.tenfm-container>.content>.splitted>.details>.container>.actions>button:hover {
+    background-color: rgb(42, 42, 42);
+}
+
+.tenfm-container>.content>.splitted>.results>.category {
+    padding-inline: 12px;
+    padding-block: 8px;
+
+    font-weight: 600;
+}
+
+.tenfm-container>.content>.splitted>.results>.category.clickable:hover {
+    background-color: #474747;
+}
+
+/* Search bar */
+.tenfm-container>.search-bar {
+    display: flex;
+
+    height: 40px;
+    min-height: 40px;
+
+    background-color: #ffffff;
+    border: 2px solid var(--w10-main);
+}
+
+.tenfm-container>.search-bar>img {
+    height: 100%;
+    aspect-ratio: 1;
+
+    filter: brightness(0);
+    object-fit: scale-down;
+}
+
+.tenfm-container>.search-bar>input {
+    flex-grow: 1;
+    border: none !important;
+
+    font-size: 15px;
+}
+
+.tenfm-container>.search-bar>input::placeholder {
+    color: #000000;
+}
+
+.tenfm-container>.search-bar>input:focus {
+    border: none;
+    outline: none;
+}
+
+/* SCROLLBAR */
+.tenfm-container ::-webkit-scrollbar-track,
+.tenfm-container ::-webkit-scrollbar-corner,
+.tenfm-container ::-webkit-scrollbar-button:vertical:decrement,
+.tenfm-container ::-webkit-scrollbar-button:vertical:increment,
+.tenfm-container ::-webkit-scrollbar-button:horizontal:decrement,
+.tenfm-container ::-webkit-scrollbar-button:horizontal:increment {
+  background-color: #171717;
+}
+
+.tenfm-container ::-webkit-scrollbar-button:vertical:decrement:hover,
+.tenfm-container ::-webkit-scrollbar-button:vertical:increment:hover,
+.tenfm-container ::-webkit-scrollbar-button:horizontal:decrement:hover,
+.tenfm-container ::-webkit-scrollbar-button:horizontal:increment:hover {
+  background-color: #373737;
+}
+
+.tenfm-container ::-webkit-scrollbar-button:vertical:decrement:active,
+.tenfm-container ::-webkit-scrollbar-button:vertical:increment:active,
+.tenfm-container ::-webkit-scrollbar-button:horizontal:decrement:active,
+.tenfm-container ::-webkit-scrollbar-button:horizontal:increment:active {
+  background-color: #a6a6a6;
+}
+
+.tenfm-container ::-webkit-scrollbar-thumb {
+  background-color: #4d4d4d;
+}
+
+.tenfm-container ::-webkit-scrollbar-thumb:hover {
+  background-color: #a6a6a6;
+}
+
+.tenfm-container ::-webkit-scrollbar-thumb:active {
+  background-color: #7a7a7a;
+}

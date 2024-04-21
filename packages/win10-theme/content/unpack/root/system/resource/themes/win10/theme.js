@@ -1,7 +1,10 @@
 const { Theme } = w96.ui;
 const { shell, sys } = w96.evt;
 
+const { setColorTheme } = await include("./lib/theme-color.js");
+const config = await include("C:/local/win10-theme/config.json");
 const startMenu = await include("./lib/start-menu.js");
+const searchMenu = await include("./lib/search-menu.js");
 
 // Theme variables
 Theme.uiVars.taskbarHeight = 40;
@@ -12,24 +15,30 @@ await include("./lib/fluent-button.js");
 
 // Start menu events
 shell.on('start-opened', (smEl) => {
-  smEl.remove();
+    smEl.remove();
 
-  // Open start menu
-  startMenu.open();
+    // Open start menu
+    startMenu.open();
+    // Remove search menu
+    searchMenu.close();
 });
 
 shell.on('start-closed', () => {
-  console.log("CLOSING SM");
-  startMenu.close();
+    startMenu.close();
 });
 
 // Add the search button
 sys.on("init-complete", () => {
-  const start_btn = document.querySelector(".start_button");
-  const search_btn = document.createElement("button");
+    setColorTheme(config.accentColor);
+    w96.ui.Theme.setColorTheme = setColorTheme;
 
-  search_btn.classList.add("search_button");
-  search_btn.onclick = () => w96.sys.execCmd("run");
+    const start_btn = document.querySelector(".start_button");
+    const search_btn = document.createElement("button");
 
-  start_btn.insertAdjacentElement("beforebegin", search_btn);
+    search_btn.classList.add("search_button");
+    search_btn.onclick = () => {
+        searchMenu.toggle();
+    };
+
+    start_btn.insertAdjacentElement("beforebegin", search_btn);
 });

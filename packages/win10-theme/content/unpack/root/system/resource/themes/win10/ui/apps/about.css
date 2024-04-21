@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   background-size: 300px;
   background-position: bottom;
+
+  filter: var(--w10-main-filter);
 }
 
 .app-winver>.body:after {

@@ -1,9 +1,20 @@
 .w96-footer {
-  box-sizing: content-box;
-  border: none;
-  padding: 2px 6px;
+    box-sizing: content-box;
+    border: none;
+    padding: 2px 6px;
 }
 
 .w96-footer .cell {
-  border: none;
+    border: none;
+}
+
+.window-dlg.ui-resizable .w96-footer::after {
+    content: " ";
+    background-image: url($RESIZER$);
+
+    height: 8px;
+    width: 8px;
+
+    right: 2px;
+    bottom: 2px;
 }

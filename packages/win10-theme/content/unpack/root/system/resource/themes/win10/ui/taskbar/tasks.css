@@ -1,62 +1,63 @@
 .taskbar-task {
-  font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 
-  position: relative;
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
 
-  color: #fff;
-  height: 100%;
+    color: #fff;
+    height: 100%;
 
-  padding: 0 6px;
-  margin: 0;
+    padding: 0 6px;
+    margin: 0;
 
-  transition: all .1s ease-in;
+    transition: all .1s ease-in;
 }
 
 .taskbar-task::after {
-  content: "";
+    content: "";
 
-  bottom: 0;
-  left: 4px;
-  right: 4px;
-  position: absolute;
-  border-top: 2px solid var(--uwp-blue);
+    bottom: 0;
+    left: 4px;
+    right: 4px;
+    position: absolute;
+    border-top: 2px solid var(--w10-secondary);
 
-  transition: all .1s ease-in;
+    transition: all .1s ease-in;
 }
 
 .taskbar-tasks:has(.taskbar-task:hover)>.taskbar-task:hover::after,
 .taskbar-tasks:has(.taskbar-task_active)>.taskbar-task_active::after {
-  left: 0;
-  right: 0;
+    left: 0;
+    right: 0;
 }
 
 .taskbar-task_active .taskbar-task-text {
-  text-shadow: none;
-  letter-spacing: normal;
+    text-shadow: none;
+    letter-spacing: normal;
 }
 
 .taskbar-task-text,
 .taskbar-task-icon {
-  margin-top: 11px;
+    margin-top: 11px;
 }
 
 .taskbar-task:hover,
 .taskbar-task_active {
-  background-image: none;
-  background-color: #404040b3;
+    background-image: none;
+    background-color: #404040b3;
 }
 
 .taskbar-task_active:hover {
-  background-color: #737373b3;
+    background-color: #737373b3;
 }
 
 .taskbar-task:active {
-  background-color: #333333b3;
+    transition: none;
+    background-color: #333333b3;
 }
 
 .taskbar-task:focus {
-  outline: none;
+    outline: none;
 }

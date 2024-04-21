@@ -1,0 +1,111 @@
+.tenfm-container > .content > .splitted > .results {
+    > .match {
+        display: flex;
+
+        padding: 1px;
+        gap: 1px;
+
+        > .content,
+        > .select {
+            padding: 12px;
+
+            &:hover {
+                background-color: rgba(255 255 255 / 15%);
+            }
+        }
+
+        > .content {
+            flex: 1;
+
+            display: flex;
+            align-items: flex-start;
+
+            column-gap: 12px;
+
+            > img {
+                aspect-ratio: 1;
+            }
+        }
+
+        > .select {
+            all: unset;
+
+            position: relative;
+
+            width: 50px;
+
+            &::after {
+                content: url($MORE_ARROW$);
+
+                position: absolute;
+
+                top: 50%;
+                left: 50%;
+
+                translate: -50% -50%;
+
+                filter: invert(1);
+            }
+        }
+
+        &:hover {
+            background-color: rgba(255 255 255 / 10%);
+        }
+
+        /* Active match */
+        &.active {
+            background-color: var(--w10-secondary);
+
+            > .content:hover {
+                background: none;
+            }
+
+            > .select {
+                display: none;
+            }
+
+            &:hover {
+                background-color: var(--w10-main);
+            }
+        }
+
+        /* Other matches */
+        &.other {
+            > .content,
+            > .select {
+                padding-block: 8px;
+            }
+
+            > .content {
+                > img {
+                    height: 16px;
+                }
+            }
+        }
+
+        /* Best match */
+        &.best {
+            > .content {
+                > img {
+                    height: 32px;
+                }
+
+                > .info {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 6px;
+
+                    > strong {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    > span {
+                        font-size: 12px;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+    }
+}

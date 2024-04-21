@@ -1,6 +1,6 @@
 .w96-selection-box-container>.select-box {
-  outline: 1px solid var(--uwp-blue);
-  background-color: color-mix(in srgb, var(--uwp-blue), transparent);
+  outline: 1px solid var(--w10-main);
+  background-color: color-mix(in srgb, var(--w10-main), transparent);
 }
 
 .shell-icon.selected .icon-image {
@@ -27,6 +27,11 @@
 }
 
 .shell-icon.selected {
-  background-color: color-mix(in srgb, var(--uwp-light-blue), transparent);
-  outline: 1px solid var(--uwp-light-blue);
+  background-color: color-mix(in srgb, var(--w10-secondary), transparent);
+  outline: 1px solid var(--w10-secondary);
+}
+
+/* Build Info */
+.user-desktop>.build-info {
+    bottom: 40px;
 }

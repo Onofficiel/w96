@@ -1,0 +1,50 @@
+/* No search */
+.tenfm-container>.content .trends {
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px;
+}
+
+/* Top apps */
+.tenfm-container>.content .trends>.frequent {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    list-style: none;
+
+    padding: 0;
+}
+
+.tenfm-container>.content .trends>.frequent>li {
+    text-align: center;
+
+    padding-block: 8px;
+    padding-inline: 12px;
+    row-gap: 8px;
+
+    background-color: rgba(80 80 80 / 55%);
+    border-radius: 5px;
+
+    width: 80px;
+
+    overflow: hidden;
+}
+.tenfm-container>.content .trends>.frequent>li:hover {
+    background-color: rgba(80 80 80 / 75%);
+}
+
+.tenfm-container>.content .trends>.frequent>li>span {
+    display: block;
+
+    line-height: 1.5;
+    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
