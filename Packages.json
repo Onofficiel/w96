@@ -1,5 +1,24 @@
 [
     {
+        "name": "bang",
+        "version": 1,
+        "friendlyName": "Bang!",
+        "description": "Close and force close any window.",
+        "author": "Onofficiel",
+        "category": "utilities",
+        "feature_requirements": [],
+        "depends": [],
+        "installedSize": 1742,
+        "downloadSize": 746,
+        "min_os_version": 300000,
+        "max_os_version": 400000,
+        "iconFiles": {
+            "16x16": "$REPO_PATH$/dist/bang/icon16.png",
+            "32x32": "$REPO_PATH$/dist/bang/icon32.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/bang"
+    },
+    {
         "name": "border",
         "version": 110.1,
         "friendlyName": "Border",
@@ -9,7 +28,7 @@
         "feature_requirements": [],
         "depends": [],
         "installedSize": 97314,
-        "downloadSize": 31292,
+        "downloadSize": 31261,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -28,7 +47,7 @@
         "feature_requirements": [],
         "depends": [],
         "installedSize": 66212,
-        "downloadSize": 15467,
+        "downloadSize": 15495,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -47,7 +66,7 @@
         "feature_requirements": [],
         "depends": [],
         "installedSize": 25530860,
-        "downloadSize": 11078619,
+        "downloadSize": 11076127,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -66,7 +85,7 @@
         "feature_requirements": [],
         "depends": [],
         "installedSize": 1331669,
-        "downloadSize": 236261,
+        "downloadSize": 236451,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -85,7 +104,7 @@
         "feature_requirements": [],
         "depends": [],
         "installedSize": 7748,
-        "downloadSize": 3029,
+        "downloadSize": 3022,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -104,7 +123,7 @@
         "feature_requirements": [],
         "depends": [],
         "installedSize": 10994812,
-        "downloadSize": 1893792,
+        "downloadSize": 1891942,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -123,7 +142,7 @@
         "feature_requirements": [],
         "depends": [],
         "installedSize": 535012,
-        "downloadSize": 463125,
+        "downloadSize": 464268,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
