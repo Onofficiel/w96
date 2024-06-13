@@ -1,0 +1,23 @@
+# Outputs configuration
+outputs:
+  bin:
+    spec:
+      friendlyName: Bang!
+      description: Close and force close any window.
+      author: Onofficiel
+      copyright: Copyright (C) Onofficiel 2024.
+      version: 1.0
+
+# Package information
+package:
+  name: bang
+  category: utilities
+
+  icon16: ./assets/icon16.png
+  icon32: ./assets/icon32.png
+
+  featureRequirements: []
+  depends: []
+
+  min_os_version: 300000
+  max_os_version: 400000

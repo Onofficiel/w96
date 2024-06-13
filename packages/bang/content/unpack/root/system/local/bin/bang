@@ -1,0 +1,71 @@
+//!wrt $BSPEC:{"ssy": "cli"}
+
+const { term } = env;
+if (!term) return;
+
+const { WindowSystem } = w96;
+
+const wndContainer = WindowSystem.getWindowContainer();
+
+class WipeApplication extends WApplication {
+    _eventCb = this.closeWindow.bind(this);
+
+    async main(argv) {
+        await super.main(argv);
+
+        const force = argv.includes("--force");
+
+        if (force) {
+            this._eventCb = this.forceCloseWindow.bind(this);
+        }
+
+        wndContainer.addEventListener("click", this._eventCb, { once: true });
+        wndContainer.style.setProperty("cursor", "no-drop", "important");
+
+        if (force) term.println("Force mode.");
+        term.println("Click any window to close it.");
+        await term.pause();
+
+        this.terminate();
+    }
+
+    getWnd(id) {
+        return WindowSystem.windows
+            .filter(Boolean)
+            .find(w => w.id === id);
+    }
+
+    closeWindow({ target }) {
+        const closest = target.closest(".window-dlg");
+
+        if (closest) {
+            const { id } = closest;
+            this.getWnd(id)?.close();
+        }
+
+        this.terminate();
+    }
+
+    forceCloseWindow({ target }) {
+        const closest = target.closest(".window-dlg");
+
+        if (closest) {
+            const { id } = closest;
+            this.getWnd(id)?.close();
+
+            // Then force the destruction.
+            closest.remove();
+        }
+
+        this.terminate();
+    }
+
+    ontermination() {
+        super.ontermination();
+
+        wndContainer.removeEventListener("click", this._eventCb);
+        wndContainer.style.removeProperty("cursor");
+    }
+}
+
+return WApplication.execAsync(new WipeApplication(), env.args);
