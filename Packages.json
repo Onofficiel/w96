@@ -8,8 +8,8 @@
         "category": "utilities",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 1742,
-        "downloadSize": 746,
+        "installedSize": 1672,
+        "downloadSize": 742,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -27,8 +27,8 @@
         "category": "accessories",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 97314,
-        "downloadSize": 31261,
+        "installedSize": 95520,
+        "downloadSize": 31218,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -36,6 +36,25 @@
             "32x32": "$REPO_PATH$/dist/border/icon32.png"
         },
         "packageRoot": "$REPO_PATH$/dist/border"
+    },
+    {
+        "name": "border-beta",
+        "version": 2,
+        "friendlyName": "Border Beta",
+        "description": "The new Border beta now available!",
+        "author": "Onofficiel",
+        "category": "accessories",
+        "feature_requirements": [],
+        "depends": [],
+        "installedSize": 259742,
+        "downloadSize": 130100,
+        "min_os_version": 300000,
+        "max_os_version": 400000,
+        "iconFiles": {
+            "16x16": "$REPO_PATH$/dist/border-beta/icon16.png",
+            "32x32": "$REPO_PATH$/dist/border-beta/icon32.png"
+        },
+        "packageRoot": "$REPO_PATH$/dist/border-beta"
     },
     {
         "name": "console",
@@ -46,8 +65,8 @@
         "category": "libraries",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 66212,
-        "downloadSize": 15495,
+        "installedSize": 64183,
+        "downloadSize": 15363,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -65,8 +84,8 @@
         "category": "entertainment",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 25530860,
-        "downloadSize": 11076127,
+        "installedSize": 25474177,
+        "downloadSize": 11064383,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -84,8 +103,8 @@
         "category": "cli",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 1331669,
-        "downloadSize": 236451,
+        "installedSize": 1306919,
+        "downloadSize": 235254,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -103,8 +122,8 @@
         "category": "development",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 7748,
-        "downloadSize": 3022,
+        "installedSize": 7489,
+        "downloadSize": 3001,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -122,8 +141,8 @@
         "category": "cli",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 10994812,
-        "downloadSize": 1891942,
+        "installedSize": 10821786,
+        "downloadSize": 1889565,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
@@ -141,8 +160,8 @@
         "category": "accessories",
         "feature_requirements": [],
         "depends": [],
-        "installedSize": 535012,
-        "downloadSize": 464268,
+        "installedSize": 532500,
+        "downloadSize": 462924,
         "min_os_version": 300000,
         "max_os_version": 400000,
         "iconFiles": {
