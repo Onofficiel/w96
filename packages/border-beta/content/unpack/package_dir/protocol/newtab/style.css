@@ -1,0 +1,58 @@
+@import url("../../res/css/main.css");
+
+body {
+  >.box {
+    justify-content: center;
+    align-items: center;
+
+    >.brand-logo,
+    >.search-zone>.search {
+      width: 280px;
+    }
+
+    >.search-zone {
+      display: flex;
+
+      > :is(.search, .go) {
+        display: block;
+
+        background-color: var(--tint-1);
+        color: var(--tint-6);
+        border: none;
+
+        height: 40px;
+      }
+
+      >.search {
+        border-radius: 8px 0 0 8px;
+        padding: 10px;
+
+        box-shadow: none;
+
+        flex: 1;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: var(--tint-5);
+          font-style: italic;
+        }
+      }
+
+      >.go {
+        border-radius: 0 8px 8px 0;
+        aspect-ratio: 1;
+      }
+    }
+
+    >.version {
+      position: absolute;
+      left: 8px;
+      bottom: 8px;
+
+      font-style: italic;
+    }
+  }
+}

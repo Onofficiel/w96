@@ -1,0 +1,187 @@
+@font-face {
+  font-family: Lexend;
+  src: url(/_/C/local/border/res/font/lexend.ttf);
+}
+
+/* The window class */
+.border {
+  & * {
+    box-sizing: border-box;
+    font-family: Lexend, sans-serif;
+  }
+
+  /* Colors */
+  --tint-1: #ffe5fb;
+  --tint-2: #f990e8;
+  --tint-3: #b52aaf;
+  --tint-4: #a720aa;
+  --tint-5: #961eaa;
+  --tint-6: #781fa1;
+
+  background-color: var(--tint-1);
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  /* Tab and Nav bar */
+  & :is(.tab-bar, .nav-bar) {
+    width: 100%;
+    height: 60px;
+
+    padding: 10px;
+
+    display: flex;
+
+    gap: 10px;
+  }
+
+  & button {
+    background-color: var(--tint-1);
+    color: var(--tint-6);
+    border: none;
+    border-radius: 8px;
+
+    height: 40px;
+    aspect-ratio: 1;
+
+    cursor: pointer;
+  }
+
+  /* Tabbar */
+  > .tab-bar {
+    /* The tab */
+    > .tab-panel {
+      flex: 1;
+
+      display: flex;
+      gap: 10px;
+
+      /* The tab container */
+      > .tab-container {
+        display: flex;
+        gap: 10px;
+
+        > .tab {
+          background-color: var(--tint-6);
+          color: var(--tint-1);
+
+          border-radius: 8px;
+          padding: 12px;
+          font-size: 14px;
+
+          min-width: 150px;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 8px;
+
+          transition: all ease 0.2s;
+
+          &.current {
+            border-radius: 8px 8px 0 0;
+            translate: 0 10px;
+          }
+        }
+      }
+
+      /* The create tab button */
+      > .create-tab {
+        background-color: var(--tint-6);
+        color: var(--tint-1);
+      }
+    }
+
+    /* The control button container (_ [] X) */
+    > .controls {
+      > button {
+        color: var(--tint-1);
+      }
+
+      > .close {
+        background-color: var(--tint-3);
+        border-radius: 0 8px 8px 0;
+      }
+
+      > .maximize {
+        background-color: var(--tint-4);
+        border-radius: 0;
+      }
+
+      > .minimize {
+        background-color: var(--tint-5);
+        border-radius: 8px 0 0 8px;
+      }
+    }
+  }
+
+  /* Navbar */
+  > .nav-bar {
+    background-color: var(--tint-6);
+
+    > .location-bar {
+      display: flex;
+      flex: 1;
+
+      > :is(input, .go) {
+        display: block;
+
+        background-color: var(--tint-1);
+        color: var(--tint-6);
+        border: none;
+
+        height: 40px;
+      }
+
+      > input {
+        border-radius: 8px 0 0 8px;
+        padding: 10px;
+
+        box-shadow: none;
+
+        flex: 1;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: var(--tint-5);
+          font-style: italic;
+        }
+      }
+
+      > .go {
+        border-radius: 0 8px 8px 0;
+      }
+    }
+  }
+
+  /* Iframe container */
+  & .view-container {
+    flex: 1;
+    background-color: #fff;
+    border: none;
+
+    > .view {
+      width: 100%;
+      height: 100%;
+
+      display: none;
+
+      border: none;
+
+      &.current {
+        display: block;
+      }
+    }
+  }
+}
+
+.border button > img,
+.border .tab > .close {
+  height: 12px;
+  width: auto;
+}

@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Lexend;
+  src: url(/_/C/local/border/res/font/lexend.ttf);
+}
+
+:root {
+  --tint-1: #ffe5fb;
+  --tint-2: #f990e8;
+  --tint-3: #b52aaf;
+  --tint-4: #a720aa;
+  --tint-5: #961eaa;
+  --tint-6: #781fa1;
+
+  --kream: #ffe5fb;
+  --puple: #781fa1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: Lexend, sans-serif;
+}
+
+body {
+  padding: 8px;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--tint-1);
+}
+
+.box {
+  position: relative;
+
+  background-color: var(--tint-6);
+  color: var(--tint-1);
+
+  padding: 8px;
+
+  border-radius: 8px;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+
+  background-color: var(--kream);
+  color: var(--puple);
+
+  border-radius: 8px;
+
+  padding: 10px;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "search": {
+    "search": "Search",
+    "placeholder": "{{search.search}}..."
+  },
+
+  "glossary": {
+    "history": "History",
+    "tab": "Tab",
+    "window": "Window",
+    "version": "Version",
+    "untitled": "Untitled"
+  },
+
+  "actions": {
+    "new_tab": "New tab",
+    "new_window": "New window",
+
+    "go_back": "Go back",
+    "go_forward": "Go forward",
+    "reload": "Reload",
+
+    "clear_history": "Clear history",
+
+    "restart": "Restart",
+    "quit": "Quit"
+  },
+
+  "blugins": {
+    "deactivate": "Deactivate",
+    "activate": "Activate",
+
+    "kill": "Kill"
+  },
+
+  "help": {
+    "help": "Help",
+    "about": "About",
+    "about_browser": "About %{name}"
+  },
+
+  "version": {
+    "browser_version": "Browser version",
+    "blugin_runtime_version": "Blugin Runtime version",
+    "os_version": "Operating System version",
+
+    "binary_path": "Binary path",
+    "command_line": "Command line",
+
+    "user_agent": "User agent"
+  }
+}

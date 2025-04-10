@@ -1,0 +1,12 @@
+window:
+  height: 550
+  width: 700
+  nativeTitlebar: true
+
+theme: "default"
+
+interface:
+  language: "en-US"
+
+search:
+  query: https://google.com/search?igu=1&q=%s

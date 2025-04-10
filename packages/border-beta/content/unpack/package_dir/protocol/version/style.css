@@ -1,0 +1,72 @@
+@import url("../../res/css/main.css");
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  padding: 8px;
+
+  background-color: var(--tint-1);
+
+  > .box {
+    position: relative;
+
+    background-color: var(--tint-6);
+    color: var(--tint-1);
+
+    overflow: auto;
+
+    padding: 8px;
+
+    border-radius: 8px;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    > .logo {
+      text-align: right;
+      font-size: .6em;
+
+      > .brand-logo {
+        width: 140px;
+      }
+    }
+
+    > .table {
+      > tbody {
+        > tr {
+          > td {
+            font-size: 0.8em;
+          }
+
+          > .label {
+            font-weight: bold;
+            padding-inline-end: 4px;
+
+            vertical-align: top;
+            text-align: end;
+
+            text-wrap: nowrap;
+
+            &::after {
+              content: ":";
+            }
+          }
+
+          > .value {
+            padding-inline-start: 4px;
+
+            font-family: "Space Mono", monospace;
+          }
+        }
+      }
+    }
+  }
+}

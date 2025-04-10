@@ -1,0 +1,26 @@
+# Outputs configuration
+outputs:
+  bin:
+    artifactName: border-beta
+    spec:
+      friendlyName: Border Beta
+      description: The new Border beta now available!
+      author: Onofficiel
+      copyright: Copyright (C) Onofficiel 2025.
+      subsys: gui
+      version: 2.0
+      icon: null
+
+# Package information
+package:
+  name: border-beta
+  category: accessories
+
+  icon16: ./assets/icon16.png
+  icon32: ./assets/icon32.png
+
+  featureRequirements: []
+  depends: []
+
+  min_os_version: 300000
+  max_os_version: 400000

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script defer>
+      (async () => {
+        let resolve;
+        let promise = new Promise((r) => (resolve = r));
+
+        window.addEventListener("blugin-config-ready", resolve);
+        await promise;
+
+        await import(`/_/C${Blugin.scriptPath.slice(2)}`).catch(err => err);
+      })();
+    </script>
+  </body>
+</html>

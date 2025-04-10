@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restarting...</title>
+
+    <style>
+      @import url("../res/css/main.css");
+
+      body {
+        > .box {
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+
+    <script defer type="module">
+      let count = 5;
+      const countdown = document.querySelector(".countdown");
+
+      countdown.innerText = 5;
+      // Wait for Border API
+      addEventListener("borderloaded", () => {
+        function handleCountdown() {
+          count -= 1;
+          if (count <= 0) {
+            clearInterval(id);
+            Border.restart();
+          }
+
+          countdown.innerText = count;
+        }
+
+        const id = setInterval(handleCountdown, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Restarting in <span class="countdown">...</span></h1>
+    </div>
+  </body>
+</html>

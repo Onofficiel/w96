@@ -1,0 +1,52 @@
+{
+  "search": {
+    "search": "Rechercher",
+    "placeholder": "{{search.search}}..."
+  },
+
+  "glossary": {
+    "history": "Historique",
+    "tab": "Onglet",
+    "window": "Fenêtre",
+    "version": "Version",
+    "untitled": "Sans titre"
+  },
+
+  "actions": {
+    "new_tab": "Nouvel onglet",
+    "new_window": "Nouvelle fenêtre",
+
+    "go_back": "Retour",
+    "go_forward": "Avancer",
+    "reload": "Actualiser",
+
+    "clear_history": "Effacer l'historique",
+
+    "restart": "Redémarrer",
+    "quit": "Quitter"
+  },
+
+  "blugins": {
+    "deactivate": "Désactiver",
+    "activate": "Activer",
+
+    "kill": "Forcer l'arrêt"
+  },
+
+  "help": {
+    "help": "Aide",
+    "about": "À propos",
+    "about_browser": "À propos de %{name}"
+  },
+
+  "version": {
+    "browser_version": "Version du navigateur",
+    "blugin_runtime_version": "Version d'exécution du Blugin",
+    "os_version": "Version du système d'exploitation",
+
+    "binary_path": "Chemin binaire",
+    "command_line": "Ligne de commande",
+
+    "user_agent": "Agent utilisateur"
+  }
+}
