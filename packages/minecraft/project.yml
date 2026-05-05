@@ -44,4 +44,4 @@ package:
   depends: []
 
   min_os_version: 300000
-  max_os_version: 400000
+  max_os_version: 400000000
