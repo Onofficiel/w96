@@ -11,7 +11,7 @@
         "installedSize": 1672,
         "downloadSize": 742,
         "min_os_version": 300000,
-        "max_os_version": 400000,
+        "max_os_version": 400000000,
         "iconFiles": {
             "16x16": "$REPO_PATH$/dist/bang/icon16.png",
             "32x32": "$REPO_PATH$/dist/bang/icon32.png"
@@ -30,7 +30,7 @@
         "installedSize": 95520,
         "downloadSize": 31218,
         "min_os_version": 300000,
-        "max_os_version": 400000,
+        "max_os_version": 400000000,
         "iconFiles": {
             "16x16": "$REPO_PATH$/dist/border/icon16.png",
             "32x32": "$REPO_PATH$/dist/border/icon32.png"
@@ -49,7 +49,7 @@
         "installedSize": 263446,
         "downloadSize": 130038,
         "min_os_version": 300000,
-        "max_os_version": 400000,
+        "max_os_version": 400000000,
         "iconFiles": {
             "16x16": "$REPO_PATH$/dist/border-beta/icon16.png",
             "32x32": "$REPO_PATH$/dist/border-beta/icon32.png"
@@ -68,7 +68,7 @@
         "installedSize": 64183,
         "downloadSize": 15363,
         "min_os_version": 300000,
-        "max_os_version": 400000,
+        "max_os_version": 400000000,
         "iconFiles": {
             "16x16": "$REPO_PATH$/dist/console/icon16.png",
             "32x32": "$REPO_PATH$/dist/console/icon32.png"
@@ -87,7 +87,7 @@
         "installedSize": 25474177,
         "downloadSize": 11064383,
         "min_os_version": 300000,
-        "max_os_version": 400000,
+        "max_os_version": 400000000,
         "iconFiles": {
             "16x16": "$REPO_PATH$/dist/minecraft/icon16.png",
             "32x32": "$REPO_PATH$/dist/minecraft/icon32.png"
@@ -106,7 +106,7 @@
         "installedSize": 1306919,
         "downloadSize": 235254,
         "min_os_version": 300000,
-        "max_os_version": 400000,
+        "max_os_version": 400000000,
         "iconFiles": {
             "16x16": "$REPO_PATH$/dist/python/icon16.png",
             "32x32": "$REPO_PATH$/dist/python/icon32.png"
@@ -125,7 +125,7 @@
         "installedSize": 7489,
         "downloadSize": 3001,
         "min_os_version": 300000,
-        "max_os_version": 400000,
+        "max_os_version": 400000000,
         "iconFiles": {
             "16x16": "$REPO_PATH$/dist/rrp/icon16.png",
             "32x32": "$REPO_PATH$/dist/rrp/icon32.png"
@@ -144,7 +144,7 @@
         "installedSize": 10821786,
         "downloadSize": 1889565,
         "min_os_version": 300000,
-        "max_os_version": 400000,
+        "max_os_version": 400000000,
         "iconFiles": {
             "16x16": "$REPO_PATH$/dist/tsc/icon16.png",
             "32x32": "$REPO_PATH$/dist/tsc/icon32.png"
@@ -163,7 +163,7 @@
         "installedSize": 532500,
         "downloadSize": 462924,
         "min_os_version": 300000,
-        "max_os_version": 400000,
+        "max_os_version": 400000000,
         "iconFiles": {
             "16x16": "$REPO_PATH$/dist/win10-theme/icon16.png",
             "32x32": "$REPO_PATH$/dist/win10-theme/icon32.png"
